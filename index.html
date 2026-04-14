@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- DEFAULT SEO -->
+  <title>c01ai Blogs</title>
+  <meta name="description" content="c01ai official blog platform">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="c01ai Blogs">
+  <meta property="og:description" content="Autonomous infrastructure blog">
+  <meta property="og:type" content="website">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/admin.css">
+
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo" onclick="navigate('/')">
+        c01ai<span>.</span>
+      </div>
+
+      <nav class="nav-links">
+        <a onclick="navigate('/')">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="loader" class="loader hidden">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <!-- App -->
+  
+  
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

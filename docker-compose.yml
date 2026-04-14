@@ -1,0 +1,20 @@
+
+services:
+
+  blog:
+    build: .
+    container_name: c01ai-blog
+    restart: always
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - ADMIN_SECRET=${ADMIN_SECRET}
+
+  nginx:
+    image: nginx:alpine
+    container_name: c01ai-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - blog

@@ -1,0 +1,34 @@
+blogs-c01ai/
+│
+├── public/
+│   ├── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── BlogCard.js
+│   │
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── BlogView.js
+│   │
+│   ├── styles/
+│   │   ├── main.css
+│   │
+│   ├── utils/
+│   │   ├── api.js
+│   │   ├── markdown.js
+│   │
+│   ├── App.js
+│   ├── main.js
+│
+├── api/
+│   ├── blogs.js
+│   ├── blog.js
+│
+├── content/
+│   ├── first-post.md
+│
+├── index.html
+├── package.json
+├── vercel.json
